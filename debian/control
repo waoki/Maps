@@ -1,0 +1,40 @@
+Source: mediawiki-maps
+Section: unknown
+Priority: optional
+Maintainer: Will Aoki <waoki@umnh.utah.edu>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.8
+Homepage: https://www.mediawiki.org/wiki/Extension:Maps
+Vcs-Git: https://github.com/JeroenDeDauw/Maps
+
+Package: mediawiki-maps
+Architecture: all
+Depends: ${misc:Depends} mediawiki
+Description: Maps extension for MediaWiki
+ Maps is a MediaWIki extension to work with and visualize geographical information.
+ .
+ Features:
+ .
+   * Powerful #display_map parser hook for embedding highly customizable
+     dynamic maps into wiki pages.
+   * Support for multiple mapping services: Leaflet, Google Maps, OpenLayers
+     and OpenStreetMap.
+   * Integration with Semantic MediaWiki via a coordinate datatype
+     -  Query your stored coordinates and visualize them on dynamic maps, as
+        tables or as lists
+     -  Export your coordinates as KML or RDF
+     -  Combine coordinates with other structured data stored in your wiki
+   * Coordinate formatting and format conversion via the #coordinates parser
+     function.
+   * Geocoding via several supported services with the #geocode parser
+     function.
+   * Geospatial operations
+     - Calculating the distance between two points with #geodistance
+     - Finding a destination given a starting point, bearing and distance
+       with #finddestination
+   * Distance formatting and format conversion via the #distance parser
+     function.
+   * Visual map editor (Special:MapEditor) to edit #display_map wikitext
+     (requires Google Maps).
+ .
+ Maps has been maintained since 2009 and is installed on over 1000 public wikis.
